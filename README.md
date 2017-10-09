@@ -1,1 +1,3 @@
 # superApp
+
+Name ideea: moneytriptrackly 
