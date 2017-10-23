@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, StyleSheet, Text, TouchableHighlight, Vibration, View, AlertIOS} from 'react-native';
+import {Button, StyleSheet, Text, TouchableHighlight, Vibration, View, AlertIOS, FlatList} from 'react-native';
 import SecondScreen from './SecondScreen';
 import ThirdScreen from './ThirdScreen';
 
@@ -94,6 +94,10 @@ class Main extends React.Component {
                 >
                     <Text>Send Alert</Text>
                 </TouchableHighlight>
+                <FlatList
+                    data={[{key: 'a'}, {key: 'b'}]}
+                    renderItem={({item}) => <Text>{item.key}</Text>}
+                />
             </View>
         )
     }
